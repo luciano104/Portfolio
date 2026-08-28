@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Burgos Luciano</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    
+    <!-- Tipografías-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    
+    <!-- Hoja de Estilos-->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!-- Encabezado Principal -->
+    <header>
+        <a href="#inicio" class="nav-logo">
+            <img class="logo" src="images/logo.png" alt="Logo">
+            <p>LUCIANO BURGOS</p>
+        </a>
+        <!-- Computadora -->
+        <nav class="menu">
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#formacion">Formación</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <!-- Celular: botón -->
+        <button class="btn-menu">
+            <span class="linea"></span>
+            <span class="linea"></span>
+            <span class="linea"></span>
+        </button>
+    </header>
+    
+    <main>
+        <!-- Inicio -->
+        <section id="inicio">
+            <div class="tarjeta-presentacion">
+                <span class="subtitulo">Programador & Estudiante UNSa</span>
+                <h1 class="titulo-principal">Luciano A. Burgos</h1>
+                <img class="foto-perfil" src="images/foto-perfil.png" alt="Foto de Luciano Burgos">
+                <hr class="linea-estilizada">
+                <p class="bio-corta">
+                    Cursando el 3er año de la Tecnicatura Universitaria en Programación. Enfocado en construir una base firme en lógica de software, estructuras de datos y desarrollo web.
+                </p>
+                <div class="inicio-links">
+                    <a href="#contacto" class="btn">Contactáme</a>
+                    <a href="#proyectos" class="btn btn-sec">Ver Proyectos →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre mi -->
+        <section id="sobre-mi">
+            <div class="cabecera">
+                <h2>Sobre mí</h2>
+            </div>
+            <div class="columnas">
+                <!--Columna de texto principal-->
+                <div class="bio">
+                    <p>
+                        ¡Hola! Soy Luciano, estudiante de la Tecnicatura Universitaria en Programación 
+                        en la Universidad Nacional de Salta (UNSa). Me apasiona la tecnología y me 
+                        enfoco en desarrollar software con lógica sólida, mantenible y orientado al detalle.
+                    </p>
+                    <p>
+                        A lo largo de la carrera he ido afianzando fundamentos de Programación Orientada 
+                        a Objetos y diseño de bases de datos relacionales. Actualmente busco aplicar lo 
+                        aprendido en proyectos prácticos mientras sigo explorando herramientas y tecnologías 
+                        del ecosistema web.
+                    </p>
+                </div>
+                <!--Columna lateral-->
+                <div class="intereses">
+                    <h3>Mis intereses</h3>
+                    <ul>
+                        <li>Lógica & Programación Orientada a Objetos</li>
+                        <li>Modelado y Normalización de Bases de Datos</li>
+                        <li>Fundamentos de Desarrollo Web (HTML, CSS, JS)</li>
+                        <li>Control de Versiones (Git)</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Habilidades -->
+        <section id="habilidades">
+            <div class="cabecera">
+                <h2>Capacidades Técnicas</h2>
+            </div>
+            <div class="columnas col-habilidades">
+                <article class="tarjeta-habilidad">
+                    <h3>Lenguajes y Frameworks</h3>
+                    <div class="tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">Django</span>
+                        <span class="tag">Java</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">Dart</span>
+                    </div>
+                    <p class="descripcion">Construcción de lógica de negocio robusta y POO estructurada.</p>
+                </article>
+
+                <article class="tarjeta-habilidad">
+                    <h3>Bases de Datos</h3>
+                    <div class="tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">DBeaver</span>
+                    </dig>
+                    <p class="descripcion">Modelado entidad-relación, normalización y optimización de consultas.</p>
+                </article>
+
+                <article class="tarjeta-habilidad">
+                    <h3>Entorno & Metodología</h3>
+                    <div class="tags">
+                        <span class="tag">Git</span>
+                        <span class="tag">GitHub</span>
+                    </div>
+                    <p class="descripcion">Control de versiones, flujo de trabajo colaborativo y ciclo de vida de desarrollo ágil.</p>
+                </article>
+            </div>
+        </section>
+
+        <!--Formación-->
+        <section id="formacion">
+            <div class="cabecera">
+                <h2>Trayectoria Académica</h2>
+            </div>
+
+            <!-- TABLA DE FORMACIÓN -->
+            <div class="contenedor-tabla">
+                <table class="tabla-formacion">
+                    <caption>
+                        Resumen de asignaturas y competencias técnicas desarrolladas
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th>ASIGNATURA</th>
+                            <th>AÑO</th>
+                            <th>COMPETENCIA ADQUIRIDA</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- 2024 -->
+                        <tr>
+                            <td>Elementos de Programación</td>
+                            <td rowspan="3" class="celda-anio">2024</td>
+                            <td>Dominio de lógica algorítmica, pseudocódigo y resolución estructurada de problemas.</td>
+                        </tr>
+                        <tr>
+                            <td>Programación</td>
+                            <td>Desarrollo de programas modulares y manejo de memoria en C.</td>
+                        </tr>
+                        <tr>
+                            <td>Matemática (MPI, AMI, ALGA)</td>
+                            <td>Desarrollo de pensamiento analítico, álgebra matricial y rigor lógico.</td>
+                        </tr>
+
+                        <!-- 2025 -->
+                        <tr>
+                            <td>Algoritmos y Estructuras de Datos</td>
+                            <td rowspan="5" class="celda-anio">2025</td>
+                            <td>Implementación eficiente de estructuras dinámicas y análisis de complejidad.</td>
+                        </tr>
+                        <tr>
+                            <td>Paradigma Orientado a Objetos</td>
+                            <td>Modelado de sistemas bajo el paradigma de objetos en Java (herencia, polimorfismo, abstracción).</td>
+                        </tr>
+                        <tr>
+                            <td>Paradigmas y Lenguajes de Programación</td>
+                            <td>Resolución de problemas con enfoques funcional, lógico, orientado a objetos y concurrente.</td>
+                        </tr>
+                        <tr>
+                            <td>Sistemas de Computación</td>
+                            <td>Comprensión de la arquitectura interna del ordenador, gestión de memoria y funcionamiento del sistema operativo.</td>
+                        </tr>
+                        <tr>
+                            <td>Configuración de Redes IP</td>
+                            <td>Fundamentos de redes, direccionamiento IP y protocolos de comunicación.</td>
+                        </tr>
+
+                        <!-- 2026 -->
+                        <tr>
+                            <td>Bases de Datos</td>
+                            <td rowspan="4" class="celda-anio">2026</td>
+                            <td>Diseño, normalización de modelos relacionales y consultas complejas con SQL.</td>
+                        </tr>
+                        <tr>
+                            <td>Desarrollo Móvil</td>
+                            <td>Construcción de interfaces y aplicaciones móviles multiplataforma con Dart y Flutter.</td>
+                        </tr>
+                        <tr>
+                            <td>Desarrollo de Software Libre</td>
+                            <td>Filosofía del software libre, licencias, herramientas open-source y colaboración en comunidades.</td>
+                        </tr>
+                        <tr>
+                            <td>Introducción al Desarrollo Web</td>
+                            <td>Maquetación y maquetado responsive con HTML5, CSS3 y comportamiento con JS.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- BARRA DE PROGRESO DE LA CARRERA -->
+            <div class="tarjeta-progreso">
+                <div class="progreso-info">
+                    <span class="progreso-etiqueta">Progreso Estimado en la Carrera</span>
+                    <span class="progreso-porcentaje">43%</span>
+                </div>
+                <div class="barra-contenedor">
+                    <div class="barra-relleno" style="width: 43%;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proyectos -->
+        <section id="proyectos">
+            <div class="cabecera">
+                <h2>Proyectos Seleccionados</h2>
+            </div>
+            <div class="columnas col-proyectos">
+                <article class="tarjeta-proyecto">
+                    <span class="proyecto-tipo">Aplicación Móvil</span>
+                    <h3>Fulbito App</h3>
+                    <div class="proyecto-imgs">
+                        <img class="img-f" src="images/panelJugador.jpeg" alt="Imagen de Fulbito App">
+                        <img class="img-f" src="images/panelDeDueño.jpeg" alt="Imagen de Fulbito App">
+                        <img class="img-f" src="images/panelDeDueñoReservas.jpeg" alt="Imagen de Fulbito App">
+                    </div>
+                    <p>Aplicación pensada para facilitar la gestión y reservas de Canchas deportivas de manera online.</p>
+                    <div class="proyecto-footer">
+                        <span class="tecnologias">Flutter / Dart / Python / Django / PostgreSQL</span>
+                        <a href="https://github.com/luciano104/fulbito-app" class="link-proyecto">Ver Proyecto ↗</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta-proyecto">
+                    <span class="proyecto-tipo">Aplicación Web</span>
+                    <h3>Portafolio Web</h3>
+                    <div class="proyecto-imgs">
+                        <img class="img-p" src="images/portfolio.png" alt="Imagen de Fulbito App">
+                    </div>
+                    <p>Diseño inspirado en tarjetas de presentación ejecutivas con maquetación en CSS Grid y Flexbox.</p>
+                    <div class="proyecto-footer">
+                        <span class="tecnologias">HTML5 / CSS3 / JS</span>
+                        <a href="#" class="link-proyecto">Ver Proyecto ↗</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto">
+            <div class="cabecera-bloque">
+                <h2>Contacto</h2>
+            </div>
+            <div class="contacto-caja">
+                <p class="contacto-intro">¿Tenés alguna propuesta laboral o consulta técnica? Podés enviarme un correo directamente a <a href="mailto:lucianoburgos104@gmail.com" class="link-email">lucianoburgos104@gmail.com</a> o completar el siguiente formulario.</p>
+                
+                <form class="formulario" id="formulario">
+                    <fieldset>
+                        <legend>Tus datos</legend>
+                        <div class="fila-formulario">
+                            <div class="campo">
+                                <label for="nombre">Nombre completo:</label>
+                                <input type="text" name="nombre" id="nombre" placeholder="Ej. Juan Pérez" required>
+                            </div>
+                            <div class="campo">
+                                <label for="correo">Correo electrónico</label>
+                                <input type="email" name="correo" id="correo" placeholder="ejemplo@domino.com" required>
+                            </div>
+                        </div>
+                        <div class="campo">
+                            <label for="telefono">Teléfono:</label>
+                            <input type="tel" name="telefono" id="telefono" placeholder="123456789">
+                        </div>
+                    </fieldset>
+    
+                    <fieldset>
+                        <legend>Tu mensaje</legend>
+                        <div class="campo">
+                            <label for="asunto">Asunto:</label>
+                            <select id="asunto" name="asunto">
+                                <option value="propuesta">Propuesta Laboral</option>
+                                <option value="consulta">Consulta Técnica</option>
+                                <option value="otro">Otro Motivo</option>
+                            </select>
+                        </div>
+                        <div class="campo">
+                            <label for="mensaje">Mensaje:</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje aquí..." required></textarea>
+                        </div>
+                    </fieldset>
+    
+                    <div class="botones-form">
+                        <button type="submit" class="btn" id="btn-submit">Enviar mensaje</button>
+                        <button type="reset" class="btn btn-sec">Borrar todo</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 - Luciano Burgos. Todos los derechos reservados.</p>
+        <div class="redes">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>

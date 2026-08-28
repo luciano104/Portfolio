@@ -1,0 +1,746 @@
+:root {
+    --fondo: #F8F8EE;
+    --tarjetas: #FFFFFF;
+    --texto: #0B2847;
+    --texto-secundario: #555555;
+    --borde: #E6E1D8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    background-color: var(--fondo);
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+/* ==========================================
+    HEADER
+   ========================================== */
+header {
+    position: fixed;
+    z-index: 1000;
+
+    top: 17px;
+    left: 0;
+    right: 0;
+
+    width: 90%;
+    max-width: 750px;
+    margin: auto;
+    background-color: transparent;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*LOGO*/
+.nav-logo {
+    display:flex;
+    align-items: center;
+    padding: 8px 10px;
+
+    gap: 10px;
+
+    text-decoration: none;
+    color: var(--texto);
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    border-radius: 40px;
+    background-color: rgba(253, 251, 247, 0.85);
+    backdrop-filter: blur(3px);
+    border: 1px solid var(--borde);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+    
+    display: block;
+}
+
+/*NAVBAR PARA CELULARES*/
+/*BOTON DE MENU*/
+.btn-menu {
+    height: 48px;
+    width: 48px;
+
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    gap: 4px;
+    
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: rgba(253, 251, 247, 0.85);
+    backdrop-filter: blur(3px);
+    border: 1px solid var(--borde);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.linea {
+    width: 20px;
+    height: 2px;
+
+    background-color: var(--texto-secundario);
+    border-radius: 2px;
+}
+/*MENU DESPLEGABLE*/
+.menu{
+    display: none;
+    position: fixed;
+    
+    top: 80px;
+    right: 36px;
+    
+    width: 150px;
+    
+    padding: 8px;
+    
+    border-radius: 20px;
+    background-color: rgba(253, 251, 247, 0.85);
+    backdrop-filter: blur(3px);
+    border: 1px solid var(--borde);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.menu ul{
+    list-style: none;
+}
+
+.menu a {
+    display: block;
+    padding: 10px 10px;
+    color: var(--texto-secundario);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.menu a:hover {
+    color: var(--texto);
+}
+
+.menu li:last-child a {
+    border: 1px solid var(--texto);
+    padding: 0px 14px;
+    border-radius: 20px;
+    color: var(--texto);
+}
+
+.menu li:last-child a:hover {
+    background-color: var(--texto);
+    color: var(--fondo);
+}
+
+header.menu-abierto .menu {
+    display: block;
+}
+
+/* ==========================================
+   ESTRUCURA PRINCIPAL
+   ========================================== */
+
+main {
+    max-width: 900px;
+    margin: 80px auto 40px auto;
+    padding: 0 20px;
+}
+
+/* Secciones generales */
+section {
+    margin-bottom: 40px;
+}
+
+/* ==========================================
+   INICIO
+   ========================================== */
+.tarjeta-presentacion {
+    background: var(--tarjetas);
+    border: 1px solid var(--borde);
+    padding: 20px 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);    
+    text-align: center;
+}
+
+.titulo-principal {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.subtitulo{
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--texto-secundario);
+    display: block;
+}
+
+.foto-perfil {
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.linea-estilizada {
+    border: none;
+    height: 1px;
+    background-color: var(--borde);
+    width: 200px;
+    margin: 0 auto 10px auto;
+}
+
+.bio-corta {
+    max-width: 600px;
+    margin: 0 auto 10px auto;
+    color: var(--texto-secundario);
+    font-size: 12px;
+}
+
+.inicio-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.btn {
+    background-color: var(--texto);
+    color: var(--fondo);
+    padding: 12px 24px;
+    border: 1px solid var(--texto);
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: transparent;
+    color: var(--texto);
+}
+
+.btn-sec {
+    background-color: transparent;
+    color: var(--texto);
+    border-color: var(--borde);
+}
+.btn-sec:hover{
+    border-color: var(--texto);
+}
+
+/* ==========================================
+   CABECERAS DE SECCIÓN
+   ========================================== */
+.cabecera {
+    border-bottom: 1px solid var(--borde);
+    margin-bottom: 30px;
+}
+
+.cabecera h2 {
+    font-size: 23px;
+    font-weight: 400;
+}
+
+/* ==========================================
+   SOBRE MÍ
+   ========================================== */
+.columnas {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.bio {
+    font-size: 12px;
+    color: var(--texto);
+}
+
+.intereses {
+    background-color: var(--tarjetas);
+    border: 1px solid var(--borde);
+    padding: 15px;
+}
+.intereses h3{
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.intereses ul {
+    list-style: none;
+}
+.intereses li {
+    padding: 6px 0;
+    border-bottom: 1px solid var(--borde);
+    font-size: 12px;
+    color: var(--texto-secundario);
+}
+.intereses li:last-child {
+    border-bottom: none;
+}
+
+/* ==========================================
+   HABILIDADES
+   ========================================== */
+.tarjeta-habilidad {
+    background: var(--tarjetas);
+    border: 1px solid var(--borde);
+    padding: 15px;
+    transition: transform 0.3s ease;
+}
+.tarjeta-habilidad:hover {
+    transform: translateY(-5px);
+}
+.tarjeta-habilidad h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+.tag {
+    background-color: var(--fondo);
+    border: 1px solid var(--borde);
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.descripcion {
+    font-size: 12px;
+    color: var(--texto-secundario);
+}
+
+/* ==========================================
+   FORMACIÓN
+   ========================================== */
+
+   /* Tabla */
+.contenedor-tabla {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.tabla-formacion {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--tarjetas);
+    border: 1px solid var(--borde);
+    font-size: 12px;
+    text-align: center;
+}
+.tabla-formacion caption{
+    font-style: italic;
+    color: var(--texto-secundario);
+    margin-bottom: 15px;
+    text-align: left;
+}
+.tabla-formacion th {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-weight: 600;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--borde);
+}
+.tabla-formacion td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--borde);
+    color: var(--texto);
+}
+.tabla-formacion tbody tr:last-child td{
+    border-bottom: none;
+}
+.tabla-formacion tbody tr:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+
+.celda-anio {
+    font-weight: 600;
+    color: var(--texto-secundario);
+    border-right: 1px solid var(--borde);
+    background-color: var(--fondo);
+}
+
+/* Barra de Carga*/
+.tarjeta-progreso {
+    background-color: var(--fondo);
+    border: 1px solid var(--borde);
+    padding: 20px 25px;
+}
+
+.progreso-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.progreso-etiqueta {
+    font-size: 13px;
+    color: var(--texto-secundario);
+    font-weight: 500;
+}
+
+.progreso-porcentaje {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--texto);
+}
+
+.barra-contenedor {
+    width: 100%;
+    height: 6px;
+    background-color: var(--fondo);
+    border: 1px solid var(--borde);
+}
+.barra-relleno {
+    height: 100%;
+    background-color: var(--texto);
+}
+
+/* ==========================================
+   PROYECTOS
+   ========================================== */
+.tarjeta-proyecto {
+    background: var(--tarjetas);
+    border: 1px solid var(--borde);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease;
+}
+.tarjeta-proyecto:hover {
+    transform: translateY(-5px);
+}
+.tarjeta-proyecto h3 {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+.tarjeta-proyecto p {
+    font-size: 15px;
+    color: var(--texto-secundario);
+    margin: 20px 0;
+}
+.proyecto-imgs {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.proyecto-imgs .img-f{
+    height: 170px;
+    width: 90px;
+}
+.proyecto-imgs .img-p {
+    height: 170px;
+    width: 300px;
+}
+
+.proyecto-tipo {
+    font-size: 12px;
+    color: var(--texto-secundario);
+}
+
+.proyecto-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid var(--borde);
+    padding-top: 15px;
+}
+
+.tecnologias {
+    font-size: 12px;
+    font-weight: 600;
+    color: var(--texto-secundario);
+}
+
+.link-proyecto {
+    color: var(--texto);
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+}
+.link-proyecto:hover {
+    text-decoration: underline;
+}
+
+/* ==========================================
+   FORMULARIO DE CONTACTO
+   ========================================== */
+.contacto-caja {
+    background: var(--tarjetas);
+    border: 1px solid var(--borde);
+    padding: 35px;
+}
+
+.contacto-intro {
+    font-size: 15px;
+    color: var(--texto-secundario);
+    margin-bottom: 25px;
+}
+
+.link-email {
+    color: var(--texto);
+    font-weight: 600;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+fieldset {
+    border: 1px solid var(--borde);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+legend {
+    font-size: 14px;
+    color: var(--texto-secundario);
+    padding: 0 10px;
+    font-weight: 600;
+}
+
+.fila-formulario {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo label {
+    font-size: 13px;
+    color: var(--texto-secundario);
+}
+
+.campo input, .campo select, .campo textarea {
+    background: var(--fondo);
+    border: 1px solid var(--borde);
+    padding: 10px 12px;
+    font-size: 15px;
+    color: var(--texto);
+    outline: none;
+}
+
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    border-color: var(--texto);
+}
+.campo textarea {
+    resize: vertical;
+}
+
+.botones-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+/* ==========================================
+   FOOTER
+   ========================================== */
+footer {
+    max-width: 900px;
+    margin: 100px auto 40px auto;
+    border-top: 1px solid var(--borde);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    font-size: 15px;
+    color: var(--texto-secundario);
+}
+
+.redes a {
+    color: var(--texto);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+
+/* ==========================================
+   COMPUTADORAS (Pantallas > 768px)
+   ========================================== */
+@media (min-width: 768px) {
+    /*GENERAL*/
+    section {
+        margin-bottom: 80px;
+    }
+    .cabecera {
+        padding-bottom: 10px;
+    }
+    .cabecera h2{
+        font-size: 30px;
+    }
+    /*Barra de Navegación para computadoras*/
+    header {
+        padding: 8px 10px;
+        border-radius: 40px;
+        background-color: rgba(253, 251, 247, 0.85);
+        backdrop-filter: blur(3px);
+        border: 1px solid var(--borde);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    }
+    .menu{
+        display: flex;
+        position: static;
+        width: auto;
+        padding: 0;
+        background-color: transparent;
+        backdrop-filter: none;
+        border: none;
+        box-shadow: none;
+    }
+    .menu ul{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+    .menu a{
+        text-decoration: none;
+        padding: 0;
+        color: var(--texto-secundario);
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .nav-logo {
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        backdrop-filter: none;
+        box-shadow: none;
+    }
+
+    .btn-menu{
+        display: none;
+    }
+/*INICIO*/
+    .titulo-principal {
+        font-size: 45px;
+    }
+    .subtitulo {
+        font-size: 14px;
+    }
+    .foto-perfil {
+        height: 280px;
+    }
+    .linea-estilizada{
+        width: 300px;
+        margin-bottom: 15px;
+    }
+    .bio-corta {
+        font-size: 17px;
+    }
+    .btn {
+        font-size: 15px;
+    }
+/*SOBRE MÍ*/
+    .columnas {
+        grid-template-columns: 3fr 2fr;
+        gap: 30px;
+    }
+    .bio {
+        font-size: 18px;
+    }
+    .intereses {
+        padding: 25px;
+    }
+    .intereses h3 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .intereses li {
+        font-size: 15px;
+    }
+/*HABILIDADES*/
+    .col-habilidades{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .tarjeta-habilidad {
+        padding: 25px;
+    }
+    .tarjeta-habilidad h3 {
+        font-size: 20px;
+    }
+    .descripcion {
+        font-size: 14px;
+    }
+/*FORMACIÓN*/
+    .tabla-formacion {
+        font-size: 15px;
+    }
+    .tabla-formacion th {
+        padding: 14px 18px;
+    }
+    .tabla-formacion td {
+        padding: 14px 18px;
+    }
+    .progreso-etiqueta {
+        font-size: 15px;
+    }
+    /*PROYECTOS*/
+    .col-proyectos {
+        grid-template-columns: 1fr 1fr;
+    }
+    .tarjeta-proyecto {
+        padding: 25px;
+    }
+    .tarjeta-proyecto h3 {
+        font-size: 20px;
+    }
+    .tarjeta-proyecto p{
+        font-size: 15px;
+    }
+    .proyecto-imgs .img-f {
+        height: 180px;
+        width: 80px;
+    }
+    .proyecto-imgs .img-p {
+        height: 180px;
+        width: 350px;
+    }
+
+
+    /*FORMULARIO*/
+    .fila-formulario {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .botones-form {
+        flex-direction: row;
+    }
+
+    .btn {
+        width: auto;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
