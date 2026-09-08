@@ -34,6 +34,6 @@ form.addEventListener('submit', function(e) {
     })
     .finally(() => {
         btn.disabled = false;
-        btn.textContent = 'Enviar';
+        btn.textContent = 'Enviar mensaje';
     });
 });
